@@ -38,6 +38,7 @@ with open("_data.json") as f:
             "shipping_method_title": order["shipping_method"]["method"]["title"],
             "order_status_id": order["status"]["id"],
             "order_status": order["status"]["title"],
+            "order_quantity": len(order["items"]),
         }
         order_data.append(data_temp)
 
